@@ -124,12 +124,11 @@ body {
 
 .plant-lover-des {
   margin-top: 50px;
-  border: 2px solid salmon;
 }
 
 .plant-lover-des ul {
   width: 85%;
-  border: 2px solid blue;
+
   margin: auto;
 }
 
@@ -137,6 +136,17 @@ body {
   list-style: disc;
   line-height: 20px;
   margin-bottom: 20px;
+}
+
+.plant-lover-img {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: -18%;
+  right: -18%;
+  width: 50%;
+  height: 50%;
 }
 
 /* responsive */
@@ -160,5 +170,8 @@ body {
   }
   .plant-lover-des {
     margin: 0;
+  }
+  .badge {
+    display: none;
   }
 }
