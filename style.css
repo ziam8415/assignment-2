@@ -25,7 +25,6 @@
 
 header {
   margin: 20px auto;
-  border: 2px solid salmon;
 }
 
 body {
@@ -84,9 +83,6 @@ body {
 }
 
 /* Plants Section */
-.plants-section {
-  margin-bottom: 200px;
-}
 
 .plant-sec-des {
   margin: 50px auto;
@@ -97,6 +93,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -119,6 +116,29 @@ body {
   margin-top: 20px;
 }
 
+/* plant-lover-section */
+
+.plants-lover {
+  margin: 180px 0 200px 0;
+}
+
+.plant-lover-des {
+  margin-top: 50px;
+  border: 2px solid salmon;
+}
+
+.plant-lover-des ul {
+  width: 85%;
+  border: 2px solid blue;
+  margin: auto;
+}
+
+.plant-lover-des ul li {
+  list-style: disc;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
 /* responsive */
 
 @media screen and (max-width: 640px) {
@@ -128,5 +148,17 @@ body {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 13px;
+  }
+  .title-1 {
+    font-size: 24px;
+  }
+
+  /* plant-lover-section */
+
+  .plants-lover {
+    margin-top: 50px;
+  }
+  .plant-lover-des {
+    margin: 0;
   }
 }
