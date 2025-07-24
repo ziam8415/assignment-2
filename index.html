@@ -28,9 +28,9 @@
     <!-- tailwind css-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="w-11/12 inter border-2">
-    <header>
-      <nav class="inter flex justify-between items-center h-13">
+  <body class="inter border-2">
+    <header class="w-11/12">
+      <nav class="flex justify-between items-center h-13">
         <div class="nav-left h-13">
           <img src="./assets/logo.png" alt="" />
         </div>
@@ -75,7 +75,7 @@
 
     <main>
       <!-- Plants Section -->
-      <section class="plants-section">
+      <section class="plants-section w-11/12">
         <div class="plant-sec-des w-10/12">
           <h2 class="title-1">
             <span class="dark5"> Our </span>
@@ -158,7 +158,7 @@
       </section>
 
       <!-- Plants Lover Section -->
-      <section class="plants-lover md:flex gap-13">
+      <section class="plants-lover w-11/12 md:flex gap-13">
         <div class="plant-lover-img flex-5/12">
           <img src="./assets/flower-store.png" alt="" />
 
@@ -189,7 +189,7 @@
       </section>
 
       <!-- Latest  Deals section -->
-      <section class="lates-deals">
+      <section class="lates-deals w-11/12">
         <div class="plant-sec-des w-10/12">
           <h2 class="title-1">Latest Deals</h2>
           <p class="sub-title">
@@ -198,26 +198,40 @@
             variety of fresh.
           </p>
         </div>
-        <div class="deals-container md:grid gap-5">
+        <div class="deals-container md:grid gap-3">
           <div class="deals del-1">
-            <img src="./assets/deal-bloom.png" alt="" />
-            <div class="deals-des">
-              <h4>60% Off | Bloom Plant</h4>
+            <div class="deals-item">
+              60% Off | Bloom Plant <br />
               <button>Shop Now</button>
             </div>
           </div>
           <div class="deals del-2">
-            <img src="./assets/deal-ana.png" alt="" />
-            <div class="deals-des">
-              <h4>30% Off | Ana Plant</h4>
+            <div class="deals-item">
+              30% Off | Ana Plant <br />
               <button>Shop Now</button>
             </div>
           </div>
           <div class="deals del-3">
-            <img src="./assets/deal-zabo.png" alt="" />
-            <div class="deals-des">
-              <h4>25% Off | Zabo Plant</h4>
-              <button class="md:text-2xl">Shop Now</button>
+            <div class="deals-item zabo">
+              25% Off | Zabo Plant <br />
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Section -->
+      <section class="join">
+        <div class="join-bg">
+          <div class="join-text">
+            <h2>Join the colorful Bunch</h2>
+            <div class="input-container">
+              <div class="inp">
+                <input type="email" name="" id="" placeholder="Write email" />
+              </div>
+              <div class="button">
+                <button>Subscribe</button>
+              </div>
             </div>
           </div>
         </div>

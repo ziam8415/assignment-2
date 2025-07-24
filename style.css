@@ -83,6 +83,9 @@ body {
 }
 
 /* Plants Section */
+.plants-section {
+  margin: auto;
+}
 
 .plant-sec-des {
   margin: 50px auto;
@@ -119,7 +122,7 @@ body {
 /* plant-lover-section */
 
 .plants-lover {
-  margin: 180px 0 50px 0;
+  margin: 180px auto 50px auto;
 }
 
 .plant-lover-des {
@@ -151,51 +154,125 @@ body {
 
 /* <!-- Latest  Deals section --> */
 
-.deals img {
-  border-radius: 20px;
-  width: 100%;
+.lates-deals {
+  margin: auto;
 }
 
-.deals-des {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.deals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 65%;
+  border-radius: 20px;
 }
 
-.deals-des h4 {
-  color: white;
-  font-size: 20px;
+.deals-container {
+  grid-template-areas: "area-1 area-3 area-3" "area-2 area-3 area-3 ";
+  margin: 50px auto;
+}
+
+.del-1 {
+  background: #cccccc url(assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: area-1;
+}
+.del-2 {
+  background: #cccccc url(assets/deal-ana.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: area-2;
+}
+.del-3 {
+  background: #cccccc url(assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: area-3;
+}
+
+.deals-item {
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  color: white;
+  padding: 70px 0 50px 0;
 }
 
-.deals-des button {
-  color: white;
+.deals-item button {
+  font-size: 1rem;
   font-weight: 600;
   border-bottom: 2px solid white;
 }
 
-.deals-container {
-  grid-template-areas: "del1 del3 del3" "del2 del3 del3";
-}
-.del-1 {
-  grid-area: del1;
-}
-.del-2 {
-  grid-area: del2;
-}
-.del-3 {
-  grid-area: del3;
+.zabo {
+  font-size: 40px;
 }
 
-.del-3 h4 {
-  font-size: 2.5rem;
+.zabo button {
+  font-size: 25px;
 }
 
-/* responsive */
+/* join section */
+.join {
+  max-width: 100%;
+  height: 500px;
+  margin: 50px auto;
+  background-image: url(assets/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid saddlebrown;
+}
+
+.join-bg {
+  height: 100%;
+  background-color: rgba(7, 51, 79, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-text {
+  color: white;
+  width: 80%;
+  font-family: Noto Serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.join-text input {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.join-text button {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
+  background: rgb(233, 90, 8);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+}
+.inp {
+  width: 70%;
+}
+.button {
+  /* width: 20%; */
+}
 
 @media screen and (max-width: 640px) {
   .menu {
@@ -228,6 +305,22 @@ body {
   }
 
   .del-3 h4 {
+    font-size: 20px;
+  }
+
+  .zabo {
+    font-size: 20px;
+  }
+
+  .zabo button {
+    font-size: 16px;
+  }
+
+  /* join section */
+  .join {
+    height: 300px;
+  }
+  .join-text {
     font-size: 20px;
   }
 }
