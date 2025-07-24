@@ -364,6 +364,10 @@ footer {
     font-size: 20px;
   }
 
+  .join-text button {
+    padding: 10px;
+  }
+
   /* footer */
   .part-4 {
     margin-top: 20px;
