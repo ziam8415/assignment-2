@@ -354,6 +354,9 @@ footer {
     width: 40%;
     gap: 10px;
   }
+  .part-2 {
+    margin-bottom: 10px;
+  }
   .part-4 div {
     height: 20px;
   }
