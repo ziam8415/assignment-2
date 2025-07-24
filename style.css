@@ -23,10 +23,6 @@
 @import "tailwindcss";
 @import "./typography.css";
 
-header {
-  margin: 20px auto;
-}
-
 body {
   margin: auto;
 }
@@ -57,6 +53,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 17px;
+}
+
+header {
+  margin: 20px auto;
 }
 
 /* navbar */
@@ -321,6 +321,26 @@ footer {
   }
   .title-1 {
     font-size: 24px;
+  }
+
+  /* banner */
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .banner-description {
+    width: 90%;
+    margin: auto;
+  }
+
+  .banner-img img {
+    width: 100%;
   }
 
   /* plant-lover-section */
