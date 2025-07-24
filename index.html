@@ -28,7 +28,7 @@
     <!-- tailwind css-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="inter border-2">
+  <body class="inter">
     <header class="w-11/12">
       <nav class="flex justify-between items-center h-13">
         <div class="nav-left h-13">
@@ -200,21 +200,27 @@
         </div>
         <div class="deals-container md:grid gap-3">
           <div class="deals del-1">
-            <div class="deals-item">
-              60% Off | Bloom Plant <br />
-              <button>Shop Now</button>
+            <div class="deals-bg">
+              <div class="deals-item">
+                60% Off | Bloom Plant <br />
+                <button>Shop Now</button>
+              </div>
             </div>
           </div>
           <div class="deals del-2">
-            <div class="deals-item">
-              30% Off | Ana Plant <br />
-              <button>Shop Now</button>
+            <div class="deals-bg">
+              <div class="deals-item">
+                30% Off | Ana Plant <br />
+                <button>Shop Now</button>
+              </div>
             </div>
           </div>
           <div class="deals del-3">
-            <div class="deals-item zabo">
-              25% Off | Zabo Plant <br />
-              <button>Shop Now</button>
+            <div class="deals-bg">
+              <div class="deals-item zabo">
+                25% Off | Zabo Plant <br />
+                <button>Shop Now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -237,5 +243,49 @@
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="w-11/12 md:flex">
+      <div class="part-1 flex-1">
+        <img src="assets/logo.png" alt="" />
+        <p>
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+      </div>
+
+      <div class="part-2 flex-1">
+        <ul class="flex flex-col gap-5">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="part-3 flex-1">
+        <ul class="flex flex-col gap-5">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Help Center</li>
+        </ul>
+      </div>
+      <div class="part-4 flex-1 flex">
+        <div class="flex-1">
+          <img src="./assets/icon-linkedin.png" alt="" />
+        </div>
+        <div class="flex-1">
+          <img src="./assets/icon-twitter.png" alt="" />
+        </div>
+        <div class="flex-1">
+          <img src="./assets/icon-facebook.png" alt="" />
+        </div>
+        <div class="flex-1">
+          <img src="./assets/icon-youtube.png" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
